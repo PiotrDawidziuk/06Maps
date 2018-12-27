@@ -42,6 +42,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         LatLng warsaw = new LatLng(52.2326063,20.7810167);
         mMap.addMarker(new MarkerOptions().position(warsaw).title("Marker in Warsaw").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(warsaw));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(warsaw, 15));
     }
 }
